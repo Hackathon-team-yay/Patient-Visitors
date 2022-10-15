@@ -2,7 +2,7 @@ package com.example.patientvisitors;
 
 import java.sql.Time;
 
-public class Visitor extends Patient{
+public class Visitor extends User{
     private String visitorName;
     private String visitorPhone;
     private String relationToPatient;

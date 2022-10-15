@@ -1,6 +1,6 @@
 package com.example.patientvisitors;
 
-public class Patient {
+public class Patient extends User {
     private String room;
     private String patientName;
     private String doctor;
