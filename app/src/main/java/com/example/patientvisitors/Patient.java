@@ -1,16 +1,16 @@
 package com.example.patientvisitors;
 
 public class Patient {
-    private String name;
     private String room;
+    private String patientName;
     private String doctor;
     private String nurse;
-    private String visitor1;
-    private String visitor2;
-    private String visitor3;
+    private Visitor visitor1;
+    private Visitor visitor2;
+    private Visitor visitor3;
 
-    public Patient(String name, String room, String doctor, String nurse, String visitor) {
-        this.name = name;
+    public Patient(String patientName, String room, String doctor, String nurse, Visitor visitor1, Visitor visitor2, Visitor visitor3) {
+        this.patientName = patientName;
         this.room = room;
         this.doctor = doctor;
         this.nurse = nurse;
@@ -20,7 +20,7 @@ public class Patient {
     }
 
     public String getName() {
-        return name;
+        return patientName;
     }
 
     public String getRoom() {
@@ -35,15 +35,15 @@ public class Patient {
         return nurse;
     }
 
-    public String getVisitorOne() {
+    public Visitor getVisitorOne() {
         return visitor1;
     }
 
-    public String getVisitorTwo(){
+    public Visitor getVisitorTwo(){
         return visitor2;
     }
 
-    public String getVisitorThree(){
+    public Visitor getVisitorThree(){
         return visitor3;
     }
 }
