@@ -5,19 +5,16 @@ public class Patient extends User {
     private String patientName;
     private String doctor;
     private String nurse;
+    private String reasonForHospitalization;
     private Visitor visitor1;
     private Visitor visitor2;
     private Visitor visitor3;
 
-    public Patient(String patientName, String room, String doctor, String nurse, Visitor visitor1, Visitor visitor2, Visitor visitor3) {
-        this.patientName = patientName;
-        this.room = room;
-        this.doctor = doctor;
-        this.nurse = nurse;
-        this.visitor1 = visitor1;
-        this.visitor2 = visitor2;
-        this.visitor3 = visitor3;
+    public Patient(String name, String email, String phone, String birthday, String address) {
+        super(name, email, phone, birthday, address);
+        this.patientName = name;
     }
+
 
     public String getName() {
         return patientName;
